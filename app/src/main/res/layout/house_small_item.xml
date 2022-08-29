@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="4dp"
+    cardview:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/icon_map"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/icon_map"
+            app:layout_constraintTop_toBottomOf="@id/name_house"
+            cardview:layout_constraintStart_toEndOf="@id/house_layout_rv" />
+
+        <TextView
+            android:id="@+id/name_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/bellefair"
+            android:text="@string/nama_house"
+            android:textColor="@color/colorBottleGreen"
+            android:textSize="16sp"
+            cardview:layout_constraintStart_toEndOf="@id/house_layout_rv"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/address_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/bellefair"
+            android:maxLines="2"
+            android:text="@string/alamat_house"
+            android:textColor="#7A8A89"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/name_house"
+            cardview:layout_constraintStart_toEndOf="@id/icon_map" />
+
+        <TextView
+            android:id="@+id/price_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/bellefair"
+            android:text="Rp100k"
+            android:textColor="#8DA19F"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/icon_map"
+            cardview:layout_constraintStart_toEndOf="@id/house_layout_rv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/bellefair"
+            android:text="/malam"
+            android:textColor="#8DA19F"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/price_house"
+            cardview:layout_constraintTop_toBottomOf="@id/address_house" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/house_layout_rv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedCorners2"
+            tools:ignore="MissingConstraints"
+            tools:src="@drawable/house" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

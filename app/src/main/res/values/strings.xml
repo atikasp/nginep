@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Nginep</string>
+    <string name="title_splash_screen">nginep.</string>
+    <string name="desc_title_ss">Tinggal dimanapun kapanpun kamu mau</string>
+    <string name="slogan">Mau nginep dimana?</string>
+    <string name="popular">Populer</string>
+    <string name="nearby">Terdekat</string>
+    <string name="nama_house">Nama Kost</string>
+    <string name="alamat_house">Alamat Rumah</string>
+    <string name="owner">Pemilik</string>
+</resources>

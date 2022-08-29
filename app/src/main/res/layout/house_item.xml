@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    cardview:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/house_layout_rv"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedCorners2"
+            tools:ignore="MissingConstraints"
+            tools:src="@drawable/house" />
+
+        <TextView
+            android:id="@+id/name_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/house_layout_rv"
+            android:text="Kost Misa"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/colorBottleGreen"
+            android:textSize="18sp"
+            android:fontFamily="@font/bellefair"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@id/rating_house"
+            app:layout_constraintTop_toBottomOf="@id/house_layout_rv"/>
+
+        <TextView
+            android:id="@+id/rating_house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/bellefair"
+            android:text="4.8"
+            android:textColor="@color/colorBottleGreen"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/house_layout_rv" />
+
+        <TextView
+            android:id="@+id/price_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/name_house"
+            android:text="Rp100k"
+            android:textColor="#009688"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="14sp"
+            android:fontFamily="@font/bellefair"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/bellefair"
+            android:text="/malam"
+            android:textColor="#009688"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/price_house"
+            cardview:layout_constraintTop_toBottomOf="@id/name_house"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

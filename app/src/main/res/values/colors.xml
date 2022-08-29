@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 1st Background Splash Screen Gradient color -->
+    <color name="colorGreen">#49AA9A</color>
+    <color name="colorBrown">#F3BF73</color>
+    <color name="colorText">#13372D</color>
+    <color name="colorGray">#C1C9C7</color>
+    <color name="colorBackground">#F7F8FB</color>
+    <color name="colorCard">#FFFFFF</color>
+    <color name="colorBottleGreen">#114F5A</color>
+    <color name="colorBottleGreenLight">#997EDEEF</color>
+    <color name="colorYellowBrown">#C49450</color>
+    <color name="colorYellowBrownLight">#80C49450</color>
+</resources>
